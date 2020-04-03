@@ -1,0 +1,16 @@
+<!--  
+    <ul>
+    <li *ngFor="let libro of libros">
+      <a [routerLink]="['/informacion/'+libro.id]">{{libro.titulo}}</a>
+    </li>
+  </ul>
+las dos formas muestran el id en la url
+-->
+
+  
+
+  <ul>
+    <li *ngFor="let libro of libros">
+      <a [routerLink]="['/informacion', libro.id]">{{libro.titulo}}</a>
+    </li>
+  </ul>
